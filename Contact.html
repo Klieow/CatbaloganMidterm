@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Catbalogan City</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('cat2.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            width: 100%;
+            background: goldenrod;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            margin-top: 80px;
+            width: 80%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: goldenrod;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="geography.html">Geography</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    
+    <div class="content">
+        <div class="title">Contact Us</div>
+        <div class="contact-info">
+            <p><strong>Address:</strong> Catbalogan City Hall, Samar, Philippines</p>
+            <p><strong>Email:</strong> info@catbalogancity.gov.ph</p>
+            <p><strong>Phone:</strong> +63 55 123 4567</p>
+            <p><strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
+        </div>
+        
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+</body>
+</html>
